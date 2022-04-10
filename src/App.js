@@ -1,7 +1,14 @@
+import { Route, Routes } from 'react-router-dom';
+import Game from './components/Game/Game';
+import MainPage from './components/ManiPage/MainPage';
+
 function App() {
 	return (
 		<div className='App'>
-			<h1>hi electron again123</h1>
+			<Routes>
+				<Route path='/' element={<MainPage />} />
+				<Route path='/game' element={<Game />} />
+			</Routes>
 		</div>
 	);
 }
