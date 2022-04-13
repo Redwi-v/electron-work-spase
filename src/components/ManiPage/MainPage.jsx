@@ -4,7 +4,9 @@ const MainPage = props => {
 	return (
 		<div className=''>
 			<menu className='menu'>
-				<NavLink to='game'> game</NavLink>
+				<NavLink to='game'>game</NavLink>
+				<NavLink to='game'>game</NavLink>
+				<NavLink to='game'>game</NavLink>
 			</menu>
 		</div>
 	);
