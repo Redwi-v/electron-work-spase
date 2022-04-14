@@ -5,6 +5,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
 	background-color: #333;
+	color: #fff;
 }
 
 * {
@@ -15,4 +16,14 @@ body {
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+	color: inherit	;
 }

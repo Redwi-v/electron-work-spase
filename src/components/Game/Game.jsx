@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import style from './game.module.scss';
 import Overworld from '../../js/Overworld';
+import { NavLink } from 'react-router-dom';
 
 const Game = props => {
 	const canvas = useRef(null);
@@ -15,8 +16,12 @@ const Game = props => {
 	}, [canvas]);
 
 	return (
+
+		<div className="gameWindow">
+			<NavLink to='/'> back</NavLink>
 		<div className={style.game}>
 			<canvas className={style.canvas} ref={canvas} width='352' height='198'></canvas>
+		</div>
 		</div>
 	);
 };

@@ -1,0 +1,17 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25%;
+    font-size: 40px;
+}
+
+.link{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+
+    &:hover{
+        color: rgba(51, 226, 109, 0.67);
+    }
+}
