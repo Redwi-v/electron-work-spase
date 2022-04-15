@@ -17,5 +17,15 @@
 		<div id="root"></div>
 
 		<script src="renderer.js"></script>
+
+		<script>
+			const remote = require('@electron/remote');
+			document.addEventListener('DOMContentLoaded', () => {
+				document.querySelector('#close').addEventListener('click', () => {
+					remote.getCurrentWindow().close();
+				});
+			});
+			console.log(remote.getCurrentWindow());
+		</script>
 	</body>
 </html>
