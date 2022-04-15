@@ -11,11 +11,9 @@ const MainPage = props => {
 				<NavLink className={style.link} to='about'>
 					About
 				</NavLink>
-				<NavLink className={style.link} to=''>
+				<NavLink id='close' className={style.link} to=''>
 					Exit
 				</NavLink>
-
-				<button id='close'>close</button>
 			</menu>
 		</div>
 	);

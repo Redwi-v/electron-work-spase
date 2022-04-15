@@ -16,12 +16,11 @@ const Game = props => {
 	}, [canvas]);
 
 	return (
-
-		<div className="gameWindow">
+		<div className='gameWindow'>
 			<NavLink to='/'> back</NavLink>
-		<div className={style.game}>
-			<canvas className={style.canvas} ref={canvas} width='352' height='198'></canvas>
-		</div>
+			<div className={style.game}>
+				<canvas className={style.canvas} ref={canvas} width='352' height='198'></canvas>
+			</div>
 		</div>
 	);
 };

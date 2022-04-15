@@ -19,11 +19,15 @@
 		<script src="renderer.js"></script>
 
 		<script>
+			//костыль, убрать потом
 			const remote = require('@electron/remote');
 			document.addEventListener('DOMContentLoaded', () => {
-				document.querySelector('#close').addEventListener('click', () => {
-					remote.getCurrentWindow().close();
-				});
+				setTimeout(() => {
+					const btn = document.querySelector('#close');
+					btn.addEventListener('click', () => {
+						remote.getCurrentWindow().close();
+					});
+				}, 2000);
 			});
 			console.log(remote.getCurrentWindow());
 		</script>
